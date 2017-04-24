@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProjectAutolayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nql-37-wTF">
+                                <rect key="frame" x="35" y="60" width="698" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gEQ-1S-mpo">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="150" id="iUR-LO-XOD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="150"/>
+                                    <mask key="constraints">
+                                        <exclude reference="iUR-LO-XOD"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDR-AB-8B5">
+                                <rect key="frame" x="35" y="290" width="288.5" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="ZDY-cp-bHY"/>
+                                    <constraint firstAttribute="height" constant="24" id="ynu-Kc-dOI">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                    <mask key="constraints">
+                                        <exclude reference="ZDY-cp-bHY"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEB-oP-bZV">
+                                <rect key="frame" x="610" y="20" width="138" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="G2J-Ur-oxw"/>
+                                    <constraint firstAttribute="height" constant="30" id="xaX-Qe-Lp5"/>
+                                </constraints>
+                                <state key="normal" title="Forgot Password">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.00054500479018315673" green="0.68783247470855713" blue="0.64359331130981445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nql-37-wTF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="CMc-N6-bzG"/>
+                            <constraint firstItem="Nql-37-wTF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="LxQ-8g-RC4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nql-37-wTF" secondAttribute="trailing" constant="15" id="RtG-Xs-g3o"/>
+                            <constraint firstItem="tDR-AB-8B5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="V8A-o5-TPf"/>
+                            <constraint firstItem="tDR-AB-8B5" firstAttribute="top" secondItem="Nql-37-wTF" secondAttribute="bottom" constant="30" id="Z8P-q8-6lb"/>
+                            <constraint firstItem="UEB-oP-bZV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cqq-cS-ZZv"/>
+                            <constraint firstItem="UEB-oP-bZV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oqi-bn-wyB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RtG-Xs-g3o"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <color key="backgroundColor" red="0.00054500479018315673" green="0.1777064732142857" blue="0.64359331130981445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <mask key="constraints">
+                                <include reference="RtG-Xs-g3o"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="121.47887323943662"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2hV-gW-DX7">
+            <objects>
+                <viewController id="fIM-Cy-iHq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g8s-fg-nYA"/>
+                        <viewControllerLayoutGuide type="bottom" id="LLX-Yq-BQN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jM6-Hr-b3t">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bfq-qN-YUW">
+                                <rect key="frame" x="16" y="10" width="288" height="549"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sRj-7H-did">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="183"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HGS-V1-EQ3">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="183"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZMQ-ha-yex">
+                                                <rect key="frame" x="96" y="0.0" width="96" height="183"/>
+                                                <color key="backgroundColor" red="1" green="0.46609933035714285" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kMK-pE-wfg">
+                                                <rect key="frame" x="192" y="0.0" width="96" height="183"/>
+                                                <color key="backgroundColor" red="0.19503348214285715" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Fl2-VI-Fip">
+                                        <rect key="frame" x="0.0" y="183" width="288" height="183"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o8l-VR-e4R">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="183"/>
+                                                <color key="backgroundColor" red="1" green="0.8719308035714286" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VqJ-cr-3Pq">
+                                                <rect key="frame" x="96" y="0.0" width="96" height="183"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.71863839285714282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="da7-NP-a9d">
+                                                <rect key="frame" x="192" y="0.0" width="96" height="183"/>
+                                                <color key="backgroundColor" red="1" green="0.85145089285714282" blue="0.77578124999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2sk-hj-ymT">
+                                        <rect key="frame" x="0.0" y="366" width="288" height="183"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="My5-E6-DBf">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="183"/>
+                                                <color key="backgroundColor" red="0.23867187500000001" green="0.82779017857142856" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8bR-9e-W58">
+                                                <rect key="frame" x="96" y="0.0" width="96" height="183"/>
+                                                <color key="backgroundColor" red="0.07759486607142857" green="0.54458705357142856" blue="0.95747767857142863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LAc-Dw-VQX">
+                                                <rect key="frame" x="192" y="0.0" width="96" height="183"/>
+                                                <color key="backgroundColor" red="0.12566964285714285" green="1" blue="0.96082589285714282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYF-E6-HV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="172"/>
+        </scene>
+    </scenes>
+</document>
