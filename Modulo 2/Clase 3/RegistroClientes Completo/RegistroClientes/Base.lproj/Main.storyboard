@@ -377,7 +377,71 @@
                     <view key="view" contentMode="scaleToFill" id="hbE-2C-E7h">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V8V-DI-h8h">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gn1-NZ-LEO">
+                                    <size key="itemSize" width="130" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="clienteCell" id="0GR-2H-4CV" customClass="ClienteCollectionViewCell" customModule="RegistroClientes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="se8-3Z-4os">
+                                                    <rect key="frame" x="25" y="18" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="7Hf-D2-DOn"/>
+                                                        <constraint firstAttribute="height" constant="80" id="NxM-5J-nw4"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="40"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6k4-IZ-7rZ">
+                                                    <rect key="frame" x="8" y="103" width="114" height="34"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="se8-3Z-4os" firstAttribute="centerX" secondItem="0GR-2H-4CV" secondAttribute="centerX" id="J15-fq-8c3"/>
+                                            <constraint firstItem="6k4-IZ-7rZ" firstAttribute="top" secondItem="se8-3Z-4os" secondAttribute="bottom" constant="5" id="SUJ-KM-27g"/>
+                                            <constraint firstItem="se8-3Z-4os" firstAttribute="top" secondItem="0GR-2H-4CV" secondAttribute="topMargin" constant="10" id="ksC-pG-zP9"/>
+                                            <constraint firstItem="6k4-IZ-7rZ" firstAttribute="leading" secondItem="0GR-2H-4CV" secondAttribute="leadingMargin" id="lht-5k-NDR"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="6k4-IZ-7rZ" secondAttribute="bottom" constant="5" id="uGD-je-eP5"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="6k4-IZ-7rZ" secondAttribute="trailing" id="yyu-on-Mwa"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imgCliente" destination="se8-3Z-4os" id="8S7-1T-SQ9"/>
+                                            <outlet property="lblCliente" destination="6k4-IZ-7rZ" id="fEf-3N-4Zm"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="7b4-dG-Chq" id="AfA-IC-eEy"/>
+                                    <outlet property="delegate" destination="7b4-dG-Chq" id="cZy-FZ-vcq"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V8V-DI-h8h" firstAttribute="leading" secondItem="hbE-2C-E7h" secondAttribute="leading" id="8hq-Sw-6Ci"/>
+                            <constraint firstItem="vel-we-99L" firstAttribute="top" secondItem="V8V-DI-h8h" secondAttribute="bottom" id="CDy-4G-XW9"/>
+                            <constraint firstAttribute="trailing" secondItem="V8V-DI-h8h" secondAttribute="trailing" id="F5w-pt-J1Q"/>
+                            <constraint firstItem="V8V-DI-h8h" firstAttribute="top" secondItem="lPH-n4-QxW" secondAttribute="bottom" id="Ikd-QQ-vaK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Clientes" id="mVZ-WF-ThB">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="SlW-Qd-FKg">

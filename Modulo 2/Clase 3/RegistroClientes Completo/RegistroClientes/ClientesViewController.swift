@@ -111,8 +111,41 @@ class ClientesViewController: UIViewController {
 //
 //
 
+extension ClientesViewController : UICollectionViewDataSource {
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return arrayClientes.count
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cliente = arrayClientes[ indexPath.item ]
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "clienteCell", for: indexPath) as! ClienteCollectionViewCell
+        
+        cell.prepararVista(cliente: cliente)
+        
+        return cell
 
+    }
+    
+}
+
+extension ClientesViewController : UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let cliente = arrayClientes[indexPath.item]
+
+        self.clienteSeleccionado = cliente
+
+        self.performSegue(withIdentifier: "mostrarInfo", sender: self)
+    
+    }
+
+}
 
 
 
