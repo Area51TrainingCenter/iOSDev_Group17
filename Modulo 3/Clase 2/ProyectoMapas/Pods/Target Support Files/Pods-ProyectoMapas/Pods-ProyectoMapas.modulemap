@@ -1,0 +1,6 @@
+framework module Pods_ProyectoMapas {
+  umbrella header "Pods-ProyectoMapas-umbrella.h"
+
+  export *
+  module * { export * }
+}
