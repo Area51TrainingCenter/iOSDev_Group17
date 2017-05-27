@@ -1,0 +1,6 @@
+framework module Pods_ProyectoRealm {
+  umbrella header "Pods-ProyectoRealm-umbrella.h"
+
+  export *
+  module * { export * }
+}
