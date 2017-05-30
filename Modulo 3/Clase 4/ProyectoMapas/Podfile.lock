@@ -1,0 +1,23 @@
+PODS:
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.2.0):
+    - GoogleMaps/Base (= 2.2.0)
+  - PermissionScope (1.1.1)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - PermissionScope
+
+SPEC CHECKSUMS:
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  GooglePlaces: bca867d5e9da15384c794b945e4226848bc6e9d9
+  PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
+
+PODFILE CHECKSUM: 6c6c95894bb52f3c18f811f97fcf31ba659f0864
+
+COCOAPODS: 1.2.1
