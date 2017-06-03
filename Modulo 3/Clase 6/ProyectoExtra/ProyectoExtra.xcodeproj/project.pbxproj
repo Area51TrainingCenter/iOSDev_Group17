@@ -13,8 +13,9 @@
 		AA4344711EE23EE500838CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4344701EE23EE500838CB9 /* Assets.xcassets */; };
 		AA4344741EE23EE500838CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4344721EE23EE500838CB9 /* LaunchScreen.storyboard */; };
 		AA43447F1EE23EE500838CB9 /* ProyectoExtraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43447E1EE23EE500838CB9 /* ProyectoExtraUITests.swift */; };
-		AA43448A1EE23F0E00838CB9 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AA4344891EE23F0E00838CB9 /* video.mp4 */; settings = {ASSET_TAGS = (video, ); }; };
-		AA43448B1EE23F0E00838CB9 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AA4344891EE23F0E00838CB9 /* video.mp4 */; settings = {ASSET_TAGS = (video, ); }; };
+		AA9DBDBE1EE255EC00EB5ED5 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AA9DBDBD1EE255EC00EB5ED5 /* video.mp4 */; };
+		AA9DBDBF1EE255EC00EB5ED5 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AA9DBDBD1EE255EC00EB5ED5 /* video.mp4 */; };
+		AA9DBDC11EE2596B00EB5ED5 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9DBDC01EE2596B00EB5ED5 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,8 @@
 		AA43447A1EE23EE500838CB9 /* ProyectoExtraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoExtraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA43447E1EE23EE500838CB9 /* ProyectoExtraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoExtraUITests.swift; sourceTree = "<group>"; };
 		AA4344801EE23EE500838CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA4344891EE23F0E00838CB9 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		AA9DBDBD1EE255EC00EB5ED5 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		AA9DBDC01EE2596B00EB5ED5 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,7 @@
 		AA4344681EE23EE500838CB9 /* ProyectoExtra */ = {
 			isa = PBXGroup;
 			children = (
-				AA4344891EE23F0E00838CB9 /* video.mp4 */,
+				AA9DBDBD1EE255EC00EB5ED5 /* video.mp4 */,
 				AA4344691EE23EE500838CB9 /* AppDelegate.swift */,
 				AA43446B1EE23EE500838CB9 /* ViewController.swift */,
 				AA43446D1EE23EE500838CB9 /* Main.storyboard */,
@@ -94,6 +96,7 @@
 		AA43447D1EE23EE500838CB9 /* ProyectoExtraUITests */ = {
 			isa = PBXGroup;
 			children = (
+				AA9DBDC01EE2596B00EB5ED5 /* SnapshotHelper.swift */,
 				AA43447E1EE23EE500838CB9 /* ProyectoExtraUITests.swift */,
 				AA4344801EE23EE500838CB9 /* Info.plist */,
 			);
@@ -190,7 +193,7 @@
 			files = (
 				AA4344741EE23EE500838CB9 /* LaunchScreen.storyboard in Resources */,
 				AA4344711EE23EE500838CB9 /* Assets.xcassets in Resources */,
-				AA43448A1EE23F0E00838CB9 /* video.mp4 in Resources */,
+				AA9DBDBE1EE255EC00EB5ED5 /* video.mp4 in Resources */,
 				AA43446F1EE23EE500838CB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,7 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA43448B1EE23F0E00838CB9 /* video.mp4 in Resources */,
+				AA9DBDBF1EE255EC00EB5ED5 /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA43447F1EE23EE500838CB9 /* ProyectoExtraUITests.swift in Sources */,
+				AA9DBDC11EE2596B00EB5ED5 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +423,7 @@
 				AA4344851EE23EE500838CB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA4344861EE23EE500838CB9 /* Build configuration list for PBXNativeTarget "ProyectoExtraUITests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				AA4344881EE23EE500838CB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
