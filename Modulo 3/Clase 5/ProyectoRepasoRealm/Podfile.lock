@@ -1,0 +1,23 @@
+PODS:
+  - DZNEmptyDataSet (1.8.1)
+  - Eureka (3.0.0)
+  - Realm (2.7.0):
+    - Realm/Headers (= 2.7.0)
+  - Realm/Headers (2.7.0)
+  - RealmSwift (2.7.0):
+    - Realm (= 2.7.0)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet
+  - Eureka
+  - RealmSwift
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Eureka: f36fd440c3ebb7bfea0a4fbe6f16a05f1cb35906
+  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
+  RealmSwift: 6d06425d3900c86473c4f323bf6949b43fca22bc
+
+PODFILE CHECKSUM: a32f06f852b3f516197e28176fc38708c077c968
+
+COCOAPODS: 1.2.1
